@@ -1,0 +1,17 @@
+[tail]
+name = "rust"
+display_name = "Rust (stable)"
+description = "Rust build and run container, glibc"
+last_modified = 2025-01-13
+
+[config.binary_name]
+type = "string"
+default = "bot"
+arg = "BINARY_NAME"
+description = "Name of the binary package to build"
+
+[config.language_version]
+type = "string"
+default = "1.84.0"
+arg = "LANGUAGE_VERSION"
+description = "Rust version to use."
