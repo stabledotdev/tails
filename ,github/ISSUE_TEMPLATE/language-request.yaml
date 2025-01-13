@@ -1,0 +1,27 @@
+name: "Language Request"
+description: "Request support for a new programming language in Tails."
+labels: [enhancement, language request]
+body:
+  - type: markdown
+    attributes:
+      value: "## Language Request"
+  - type: input
+    id: language_name
+    attributes:
+      label: "Language Name"
+      description: "What is the name of the language you want to add?"
+      placeholder: "e.g., Go, TypeScript, Go"
+    validations:
+      required: true
+  - type: textarea
+    id: example_config
+    attributes:
+      label: "Example Config"
+      description: "Provide an example of what configuration options should be included for the language."
+      placeholder: "Language version, chosen package manager..."
+  - type: checkboxes
+    id: contribution_interest
+    attributes:
+      label: "Would you like to contribute?"
+      options:
+        - label: "I am interested in contributing to this request."
