@@ -1,0 +1,17 @@
+[tail]
+name = "javascript-bun"
+display_name = "JavaScript (Bun)"
+description = "Recommended for all JavaScript projects, improved performance over Node.js."
+last_modified = 2025-01-12
+
+[config.main_file]
+type = "string"
+default = "index.ts"
+arg = "MAIN_FILE"
+description = "The main file to run when starting your bot."
+
+[config.language_version]
+type = "string"
+default = "1.1.43"
+arg = "LANGUAGE_VERSION"
+description = "Bun version to use."

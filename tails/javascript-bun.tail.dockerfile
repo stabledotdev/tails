@@ -1,0 +1,10 @@
+ARG BUN_VERSION=1.1.43 
+FROM oven/bun:${BUN_VERSION}
+COPY repo /bot
+WORKDIR /bot
+
+ARG MAIN_FILE
+ENV MAIN_FILE=${MAIN_FILE}
+
+RUN bun install
+CMD bun run ${MAIN_FILE}
