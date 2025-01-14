@@ -1,6 +1,3 @@
-# syntax=docker.io/docker/dockerfile:1.7-labs
-# ^ Required to support --exclude in COPY
-
 ARG LANGUAGE_VERSION=1.84.0
 FROM rust:${LANGUAGE_VERSION}-bookworm as builder
 COPY repo /bot
@@ -21,6 +18,6 @@ ENV BINARY_NAME=${BINARY_NAME}
 
 WORKDIR /bot
 
-COPY --from=builder --exclude=target --exclude=.git /bot /bot
+COPY --from=builder /bot /bot
 COPY --from=builder /bot/target/release/${BINARY_NAME} /usr/local/bin/bot
 CMD ["/usr/local/bin/bot"]
