@@ -9,8 +9,8 @@ WORKDIR /bot
 ARG BINARY_NAME=bot
 ENV BINARY_NAME=${BINARY_NAME}
 RUN cargo build --release --bin ${BINARY_NAME}
-
-### Check signature of Google's distroless debian image
+RUN cp target/release/${BINARY_NAME} /usr/local/bin/bot
+RUN rm -rf /bot/target
 
 FROM alpine:latest AS verify
 COPY --from=cosign-bin /ko-app/cosign /usr/local/bin/cosign
@@ -26,5 +26,5 @@ ENV BINARY_NAME=${BINARY_NAME}
 WORKDIR /bot
 
 COPY --from=builder /bot /bot
-COPY --from=builder /bot/target/release/${BINARY_NAME} /usr/local/bin/bot
+COPY --from=builder /usr/local/bin/bot /usr/local/bin/bot
 CMD ["/usr/local/bin/bot"]
