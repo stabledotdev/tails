@@ -1,0 +1,17 @@
+[tail]
+name = "dotnet"
+display_name = ".NET (C#)"
+description = "Support for .NET-based bots"
+last_modified = 2025-01-16
+
+[config.project_name]
+type = "string"
+default = "Bot"
+arg = "PROJECT_NAME"
+description = "The .csproj file for your bot."
+
+[config.language_version]
+type = "string"
+default = "9.0"
+arg = "LANGUAGE_VERSION"
+description = ".NET version to use."
