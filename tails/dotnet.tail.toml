@@ -4,10 +4,10 @@ display_name = ".NET (C#)"
 description = "Support for .NET-based bots"
 last_modified = 2025-01-16
 
-[config.project_name]
+[config.project_file]
 type = "string"
 default = "Bot"
-arg = "PROJECT_NAME"
+arg = "PROJECT_FILE"
 description = "The .csproj file for your bot."
 
 [config.language_version]
