@@ -1,9 +1,10 @@
-FROM mcr.microsoft.com/dotnet/runtime:9.0-alpine AS base
+ARG LANGUAGE_VERSION=9.0
+FROM mcr.microsoft.com/dotnet/runtime:${LANGUAGE_VERSION}-alpine AS base
 WORKDIR /app
 
 ARG PROJECT_FILE=Bot
 
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:${LANGUAGE_VERSION}-alpine AS build
 WORKDIR /src
 COPY ${PROJECT_FILE}.csproj .
 RUN dotnet restore ${PROJECT_FILE}.csproj
