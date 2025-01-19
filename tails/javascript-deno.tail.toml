@@ -1,0 +1,17 @@
+[tail]
+name = "javascript-deno"
+display_name = "JavaScript (Deno)"
+description = "The power of Deno, running your Discord bot!"
+last_modified = 2025-01-18
+
+[config.main_file]
+type = "string"
+default = "index.ts"
+arg = "MAIN_FILE"
+description = "The main file to run when starting your bot."
+
+[config.language_version]
+type = "string"
+default = "2.1.6"
+arg = "DENO_VERSION"
+description = "Deno version to use."
