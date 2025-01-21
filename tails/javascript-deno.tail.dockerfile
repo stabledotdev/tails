@@ -1,5 +1,5 @@
 ARG DENO_VERSION=2.1.6 
-FROM denoland/deno:${DENO_VERSION}
+FROM denoland/deno:alpine-${DENO_VERSION}
 COPY repo /bot
 WORKDIR /bot
 
