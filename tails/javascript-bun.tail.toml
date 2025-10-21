@@ -10,8 +10,8 @@ default = "index.ts"
 arg = "MAIN_FILE"
 description = "The main file to run when starting your bot."
 
-[config.language_version]
+[config.bun_version]
 type = "string"
 default = "1.1.43"
-arg = "LANGUAGE_VERSION"
+arg = "BUN_VERSION"
 description = "Bun version to use."
