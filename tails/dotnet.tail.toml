@@ -1,8 +1,8 @@
 [tail]
 name = "dotnet"
-display_name = ".NET (C#)"
-description = "Support for .NET-based bots"
-last_modified = 2025-01-16
+display_name = "C# (.NET)"
+description = "The verbose power of C# and .NET for your Discord bot"
+last_modified = 2025-10-26
 
 [config.project_file]
 type = "string"

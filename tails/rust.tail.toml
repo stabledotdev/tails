@@ -1,8 +1,8 @@
 [tail]
 name = "rust"
-display_name = "Rust (stable)"
-description = "Rust build and run container, glibc"
-last_modified = 2025-01-13
+display_name = "Rust"
+description = "A native binary approach to Discord bots with Rust"
+last_modified = 2025-10-26
 
 [config.binary_name]
 type = "string"
