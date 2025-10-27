@@ -1,0 +1,30 @@
+[tail]
+name = "python"
+display_name = "Python"
+description = "Python Discord bot with pip support"
+last_modified = 2025-10-27
+
+[config.main_file]
+type = "string"
+default = "main.py"
+arg = "MAIN_FILE"
+description = "The main Python file to run when starting your bot."
+
+[config.python_version]
+type = "string"
+default = "3.14"
+arg = "PYTHON_VERSION"
+description = "Version of Python to use."
+
+[config.requirements_file]
+type = "string"
+default = "requirements.txt"
+arg = "REQUIREMENTS_FILE"
+description = "Path to requirements.txt file for dependencies."
+
+[config.venv_enabled]
+type = "string"
+default = "false"
+arg = "VENV_ENABLED"
+description = "Whether to use Python virtual environment."
+options = ["true", "false"]
