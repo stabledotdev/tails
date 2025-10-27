@@ -1,8 +1,8 @@
 [tail]
 name = "javascript-node"
 display_name = "JavaScript (Legacy Node.js)"
-description = "The classic Node.js runtime, with your choice of npm, pnpm, or yarn."
-last_modified = 2025-01-17
+description = "The classic Node.js runtime, with your choice of npm, pnpm or yarn"
+last_modified = 2025-10-26
 
 [config.main_file]
 type = "string"

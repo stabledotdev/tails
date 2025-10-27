@@ -1,8 +1,8 @@
 [tail]
 name = "javascript-deno"
 display_name = "JavaScript (Deno)"
-description = "The power of Deno, running your Discord bot!"
-last_modified = 2025-01-18
+description = "Deno provides improved performance over Node.js"
+last_modified = 2025-10-26
 
 [config.main_file]
 type = "string"
